@@ -90,3 +90,95 @@ h1 {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+/* Menú de las recetas */
+.barra_recetas {
+    overflow: hidden;
+    background-color: var(--oscuro);
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.barra_recetas a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.barra_recetas a:not(.no) {
+    border-left: 5px solid floralwhite;
+}
+
+.barra_recetas a:hover {
+    background-color: var(--amarillo);
+    color: black;
+}
+
+/* Recetas */
+.receta {
+    border-top: 2px solid var(--amarillo);
+    margin-top: 55px;
+}
+
+.receta .dos_columnas {
+    margin-top: 15px;
+}
+
+.receta .detalles {
+    background-color: #f0eade;
+    width: fit-content;
+    margin: 35px auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.receta .detalles p {
+    padding: 0px 30px;
+}
+
+.receta .detalles .negrita {
+    font-weight: bold;
+}
+
+.receta .nombre {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.receta .ingredientes {
+    border: 1px solid var(--amarillo);
+    padding: 0 40px 16px 40px;
+    width: fit-content;
+    margin: auto;
+    list-style-type: circle;
+}
+
+.receta .ingredientes p,
+.receta .pasos p {
+    font-weight: bold;
+}
+
+.receta .ingredientes li {
+    margin-left: 50px;
+}
+
+.receta .pasos p {
+    font-size: 22px;
+    text-align: center;
+    color: var(--oscuro);
+}
+
+.receta .pasos li {
+    margin-bottom: 16px;
+}
+
+.receta .pasos ::marker {
+    font-weight: bold;
+    color: var(--oscuro);
+}
