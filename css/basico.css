@@ -1,0 +1,13 @@
+/* Empezando */
+* {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.border {
+    border: 2px dashed goldenrod;
+}
