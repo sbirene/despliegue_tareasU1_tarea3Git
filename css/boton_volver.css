@@ -1,0 +1,27 @@
+:root {
+    --amarillo: #F2CD88;
+    --naranja: #F2AB6D;
+    --rosa: #F2C4B3;
+    --rojo: #F26B6B;
+    --oscuro: #8C4F4F;
+}
+
+#btn_volver {
+    display: none; /* Que no se vea al principio */
+    position: fixed; /* Fixed/sticky posición */
+    bottom: 20px; /* Abajo */
+    right: 30px; /* A la derecha */
+    z-index: 99; /* Que siempre esté por encima */
+    border: none; 
+    outline: none; 
+    background-color: var(--amarillo);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+  #btn_volver:hover {
+    background-color: var(--rojo);
+  }
