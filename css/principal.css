@@ -91,6 +91,24 @@ h1 {
     text-align: center;
 }
 
+/* Enlace a recetas sencillas de la portada */
+.enlace_sencillas {
+    text-align: center;
+}
+
+.enlace_sencillas a {
+    border: 2px solid var(--oscuro);
+    background-color: var(--oscuro);
+    padding: 5px 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.enlace_sencillas a:hover {
+    background-color: var(--rojo);
+    border-color: var(--rojo);
+}
+
 /* Menú de las recetas */
 .barra_recetas {
     overflow: hidden;
