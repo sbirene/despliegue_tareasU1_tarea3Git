@@ -1,0 +1,92 @@
+:root {
+    --amarillo: #F2CD88;
+    --naranja: #F2AB6D;
+    --rosa: #F2C4B3;
+    --rojo: #F26B6B;
+    --oscuro: #8C4F4F;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+.pagina {
+    margin-left: 200px;
+    padding: 1px 16px;
+    /* height: 100%; */
+    background-color: floralwhite;
+}
+
+.contenido {
+    width: 80%;
+    margin: auto;
+    /*background-color: yellow;*/
+}
+
+/* Texto general */
+h1 {
+    text-align: center;
+}
+
+/* Imágenes portada */
+.dos_columnas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+}
+
+.col {
+    width: 45%;
+    margin: auto 2%;
+}
+
+.col img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Efecto hover de las imágenes */
+.contenedor_imagen {
+    position: relative;
+    /* width: 50%; */
+}
+
+.overlay {
+    position: absolute;
+    /*top: 0;*/
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--oscuro);
+}
+
+.contenedor_imagen:hover .overlay {
+    opacity: 1;
+    bottom: 0;
+    height: 100%;
+}
+
+.texto {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

@@ -6,22 +6,85 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Ejercicio 3 - Inicio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/basico.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/principal.css'>
+    <link rel="stylesheet" type='text/css' media='screen' href="css/menu.css">
     <!-- <script src='scripts/sencillo.js'></script> -->
 
 </head>
 
 <body>
-    <h1>Empezando</h1>
-    <div class="border">
-        <h4>Ideas para el contenido</h4>
-        <ul>
-            <li>Página de fotografía</li>
-            <li>Página de recetas de cocina</li>
-            <li>Página con apuntes y ejercicios del grado</li>
-            <li>Ejemplo de portfolio</li>
-        </ul>
+    <!-- Menú -->
+    <ul class="menu">
+        <li class="logo"><img src="imagenes/logo1.png" alt="logo"></li>
+        <li><a class="active" href="index.html">Portada</a></li>
+        <li><a href="#">Recetas sencillas</a></li>
+        <li><a href="#">Recetas carne</a></li>
+        <li><a href="#">Recetas pescado</a></li>
+        <li><a href="#">Recetas pasta</a></li>
+        <li><a href="#">Postres</a></li>
+        <li class="abajo"><a href="https://github.com/sbirene" target="_blank">Mi GitHub</a></li>
+    </ul>
+    <!--  -->
+
+
+    <div class="pagina">
+        <div class="contenido">
+            <h1>Bienvenidos y bienvenidas a mi página de recetas</h1>
+            <p style="text-align: center;">Aquí podréis consultar una gran variedad de recetas para todos los gustos</p>
+
+            <div class="dos_columnas">
+                <div class="col izq">
+                    <a href="#">
+                        <div class="contenedor_imagen">
+                            <img src="imagenes/carne.jpg" alt="filete de carne">
+                            <div class="overlay">
+                                <div class="texto">Recetas con carne</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col der">
+                    <a href="#">
+                        <div class="contenedor_imagen">
+                            <img src="imagenes/pescado.jpg" alt="filete de pescado">
+                            <div class="overlay">
+                                <div class="texto">Recetas con pescado</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="dos_columnas">
+                <div class="col izq">
+                    <a href="#">
+                        <div class="contenedor_imagen">
+                            <img src="imagenes/pasta.jpg" alt="plato de pasta">
+                            <div class="overlay">
+                                <div class="texto">Recetas con pasta</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col der">
+                    <a href="#">
+                        <div class="contenedor_imagen">
+                            <img src="imagenes/postre.jpg" alt="un postre">
+                            <div class="overlay">
+                                <div class="texto">Postres</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <br /><br /><br /><br />
+        </div>
     </div>
+
+
+
 </body>
 
 </html>
